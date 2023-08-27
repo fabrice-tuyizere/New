@@ -1,0 +1,22 @@
+{%extends 'main.html'%}
+{%block content %}
+<h1>Available locations</h1>
+
+<div>
+    <a href="{% url 'create-location'%}">add new location</a>
+
+    {% for location in locations  %}
+<div>
+
+<h5>{{location.id}}----<a href=" {% url 'display' location.id%}">{{location.name}} </a></h5>
+
+<hr>
+</div>
+
+
+    {%endfor%}
+
+
+</div>
+
+{% endblock %}

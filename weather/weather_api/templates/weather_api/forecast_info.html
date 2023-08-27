@@ -1,0 +1,18 @@
+{%extends 'main.html'%}
+
+
+{%block content%}
+
+
+<h1>  <span>{{city_name}}</span> Weather information</h1>
+<p>city_name: {{city_name}}</p>
+<p>country_name: {{country}}</p>
+<p>kelvin temperature: {{ temp_kelvin }}</p>
+<p>tempereture in celcius : {{temp_celcius}} <span>&#8451;</span></p>
+<p>Wind Speed: {{ winds_speed }}</p>
+<p>Humidity: {{ humidity }}</p>
+<p>Description: {{ description }}</p>
+<p>Sunrise Time: {{ sunrise_time }}</p>
+<p>Sunset Time: {{ sunset_time }}</p>
+
+{% endblock %}
